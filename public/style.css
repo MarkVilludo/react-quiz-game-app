@@ -5,6 +5,7 @@
 
 /* Main App Container */
 .app {
+  padding: 10px;
 }
 
 /* Start Container */
@@ -16,50 +17,46 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-content: center;
   align-items: center;
+  text-align: center;
+  padding: 10px;
 }
 
 /* Start Container Title */
 .start-container-title {
-  font-family: "Karla";
-  font-style: normal;
+  font-family: "Karla", sans-serif;
   font-weight: 700;
   font-size: 31.25px;
   line-height: 37px;
-  text-align: center;
   color: #293264;
 }
 
 .start-container-subtitle {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   color: #293264;
 }
 
 .start-container-button {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  text-align: center;
   color: #f5f7fb;
   background: #4d5b9e;
   border-radius: 15px;
-  border: 0px;
+  border: none;
   width: 193px;
   height: 52px;
+  margin-top: 20px;
 }
 
 /* Quiz Container */
 .quiz-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  padding: 10px;
 }
 
 /* Quiz Question */
@@ -68,69 +65,64 @@
   flex-direction: column;
   align-items: stretch;
   margin: 5px;
-  margin-left: 50px;
-  margin-right: 50px;
+  padding: 10px;
 }
 
 .quiz-container-question-title {
-  font-family: "Karla";
-  font-style: normal;
+  font-family: "Karla", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 19px;
   color: #293264;
+  margin-bottom: 10px;
 }
 
 .quiz-container-question-options-container {
   display: flex;
-  flex-wrap: wrap; /* Allow options to wrap on smaller screens */
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .quiz-container-question-options-container-option {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   padding: 10px;
-  line-height: 12px;
   text-align: center;
-  margin: 5px; /* Adjusted margin for better spacing on smaller screens */
   color: #293264;
+  background-color: #f5f7fb;
   border-radius: 7.94239px;
-  border: 1px;
-  line-height: 1;
+  border: 1px solid transparent;
+  flex: 1;
+  min-width: 100px;
 }
 
 /* Button Container */
 .button-container {
   display: flex;
-  align-self: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .button-container-score {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  text-align: center;
-  margin-right: 10px;
   color: #293264;
+  margin-right: 10px;
 }
 
 /* General Button Style */
 .button {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 12px;
-  text-align: center;
   color: #f5f7fb;
-  width: 120px;
-  height: 35px;
   background: #4d5b9e;
   border-radius: 10px;
-  border: 1px;
-  align-self: center;
+  border: none;
+  width: 120px;
+  height: 35px;
 }
 
 .button:disabled {
@@ -140,12 +132,13 @@
 /* Quiz Divider */
 .quiz-container-question-divider {
   border: 0.794239px solid #dbdef0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Blobs */
 .blob1 {
   position: absolute;
-  margin: 0px;
   left: -100px;
   bottom: -100px;
   z-index: -1;
@@ -154,7 +147,6 @@
 
 .blob2 {
   position: absolute;
-  margin: 0px;
   top: -120px;
   right: -80px;
   z-index: -1;
@@ -192,7 +184,7 @@
   .quiz-container-question-options-container-option {
     font-size: 14px;
     padding: 8px;
-    margin: 4px;
+    margin: 5px;
   }
 
   .button-container-score {
