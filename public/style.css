@@ -58,6 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  padding-top: 2rem;
 }
 
 /* Quiz Question */
