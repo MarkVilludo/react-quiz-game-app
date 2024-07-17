@@ -91,7 +91,6 @@ body {
   padding: 10px;
   text-align: center;
   color: #293264;
-  background-color: #f5f7fb;
   border-radius: 7.94239px;
   border: 1px solid transparent;
   flex: 1;
@@ -189,6 +188,7 @@ body {
     font-size: 14px;
     padding: 8px;
     margin: 5px;
+    min-width: 400px;
   }
 
   .button-container-score {
@@ -239,6 +239,7 @@ body {
     font-size: 12px;
     padding: 6px;
     margin: 3px;
+    min-width: 200px;
   }
 
   .button-container-score {
