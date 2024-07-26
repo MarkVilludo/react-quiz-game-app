@@ -104,7 +104,7 @@ export default function App() {
           {showAnswers ? (
             <div className="button-container">
               <h3 className="button-container-score">
-                {'You scored ' + score + '/5 correct answers'}
+                {'You scored ' + score + '/'+ questions.length +'correct answers'}
               </h3>
               <button className="button" onClick={playAgain}>
                 Play Again
